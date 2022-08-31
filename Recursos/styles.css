@@ -1,6 +1,12 @@
 
+* {
+    background-color: rgb(21, 68, 86);
+}
+
+
 h2 
 {
+    background-color: rgb(255, 255, 255);
     position: absolute;
     top : 50%;
     left : 50%;
@@ -15,6 +21,7 @@ h2
 }
 h2 span:nth-child(1) 
 {
+    background-color: rgb(255, 255, 255);
     position: absolute;
     top: 0;
     left:0;
@@ -28,6 +35,7 @@ h2:hover span:nth-child(1)
     transform: translateY(-18px);
 }
 h2 span:nth-child(2){
+    background-color: rgb(255, 255, 255);
     position: absolute;
     top:0;
     left: 0;
@@ -44,7 +52,7 @@ h2 span:nth-child(3){
     position: absolute;
     top:50%;
     left: 0;
-    transform: translateY(-15px) scaleY(0);
+    transform: translateY(50%) scaleY(0);
     width: 98%;
     color: #000;
     background: #ff0;
@@ -53,24 +61,22 @@ h2 span:nth-child(3){
     text-align: center;
     padding-left: 20px;
     margin-left: 5px;
-    transition: 0.5s ;
+    transition: 5s ;
     
     
 }
 h2:hover span:nth-child(3)
 {
-    transform: traslateY(-15px) scaleY(0);
+    transform: traslateY(50%) scaleY(1);
 }
 
 .titulo_espacio 
 {
-    width: 50%;
-    height: 50%;
-    border-top: 2px solid rgb(70, 1, 1);
+    
+    width: 100%;
+    transform: translateY(200px);
+    border-top: 200px ;
     top : 50%;
-    border-color:rgb(70, 1, 1)
+    border-color:rgb(255, 255, 255)
 }
 
-* {
-    background-color: rgb(21, 68, 86);
-}

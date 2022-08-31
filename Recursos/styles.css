@@ -3,10 +3,20 @@
     background-color: rgb(21, 68, 86);
 }
 
+.titulo_espacio 
+{   
+    transform: translateY(125px);
+    height:112px;
+    width: 100%;
+    background-color: rgb(18, 61, 78);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
 
 h2 
 {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(18, 61, 78);
     position: absolute;
     top : 50%;
     left : 50%;
@@ -21,11 +31,11 @@ h2
 }
 h2 span:nth-child(1) 
 {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(18, 61, 78);
     position: absolute;
     top: 0;
     left:0;
-    color: #000;
+    color: rgb(255, 255, 255);
     transition: 0.5s;
     clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
     overflow: hidden;
@@ -35,24 +45,24 @@ h2:hover span:nth-child(1)
     transform: translateY(-18px);
 }
 h2 span:nth-child(2){
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(18, 61, 78);
     position: absolute;
     top:0;
     left: 0;
-    color: #000;
+    color: rgb(255, 255, 255);
     transition: 0.5s;
     clip-path:polygon(0 50%,100% 50%, 100% 100%, 0 100%);
     overflow: hidden;
 }
 h2:hover span:nth-child(2)
 {
-    transform: traslate(18px);
+    transform: translateY(18px);
 }
 h2 span:nth-child(3){
     position: absolute;
     top:50%;
     left: 0;
-    transform: translateY(50%) scaleY(0);
+    transform: translateY(-15px) scaleY(0);
     width: 98%;
     color: #000;
     background: #ff0;
@@ -61,22 +71,13 @@ h2 span:nth-child(3){
     text-align: center;
     padding-left: 20px;
     margin-left: 5px;
-    transition: 5s ;
-    
-    
-}
-h2:hover span:nth-child(3)
-{
-    transform: traslateY(50%) scaleY(1);
+    transition: 0.5s ;
 }
 
-.titulo_espacio 
+
+h2:hover span:nth-child(3)
 {
-    
-    width: 100%;
-    transform: translateY(200px);
-    border-top: 200px ;
-    top : 50%;
-    border-color:rgb(255, 255, 255)
+    transform: translateY(-15px) scaleY(1);
 }
+
 

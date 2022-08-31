@@ -7,6 +7,9 @@ for (let personas of countries)
 
 }
 
+//Insertar codigo de JavaScript 
+
+
 //Métodos de Cadenas
 concat() // junta dos o mas cadenas y retorna una nueva
 startWith() // si una cadena comienza con los caracteres de otra cadena, devuelve true, sino devuelve false.

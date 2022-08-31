@@ -1,9 +1,79 @@
-* {
-    background-color: rgb(34, 168, 168);
-}
-.titulo_espacio
-{
 
+h2 
+{
+    position: absolute;
+    top : 50%;
+    left : 50%;
+    transform: 
+    translate(-50%, -50%);
+    margin: 0;
+    padding : 0;
+    font-size:6em;
+    color: transparent;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+h2 span:nth-child(1) 
+{
+    position: absolute;
+    top: 0;
+    left:0;
+    color: #000;
+    transition: 0.5s;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+    overflow: hidden;
+}
+h2:hover span:nth-child(1)
+{
+    transform: translateY(-18px);
+}
+h2 span:nth-child(2){
+    position: absolute;
+    top:0;
+    left: 0;
+    color: #000;
+    transition: 0.5s;
+    clip-path:polygon(0 50%,100% 50%, 100% 100%, 0 100%);
+    overflow: hidden;
+}
+h2:hover span:nth-child(2)
+{
+    transform: traslate(18px);
+}
+h2 span:nth-child(3){
+    position: absolute;
+    top:50%;
+    left: 0;
+    transform: translateY(-50%) scaleY(0);
+    width: 91%;
+    color: #000;
+    background: #ff0;
+    font-size: 0.25em;
+    letter-spacing: 0.7em;
+    text-align: center;
+    padding-left: 20px;
+    margin-left: 5px;
+    transition: 0.5s;
+    
+}
+h2:hover span:nth-child(3)
+{
+    transform: traslateY(-50%) scaleY(1);
+}
+
+.titulo_espacio 
+{
+    width: 50%;
+    height: 50%;
+    border-top: 2px solid rgb(70, 1, 1);
+    top : 50%;
+    border-color:rgb(70, 1, 1)
+}
+
+
+
+* {
+    background-color: rgb(21, 68, 86);
 }
 
 

@@ -44,8 +44,8 @@ h2 span:nth-child(3){
     position: absolute;
     top:50%;
     left: 0;
-    transform: translateY(-50%) scaleY(0);
-    width: 91%;
+    transform: translateY(-15px) scaleY(0);
+    width: 98%;
     color: #000;
     background: #ff0;
     font-size: 0.25em;
@@ -53,12 +53,13 @@ h2 span:nth-child(3){
     text-align: center;
     padding-left: 20px;
     margin-left: 5px;
-    transition: 0.5s;
+    transition: 0.5s ;
+    
     
 }
 h2:hover span:nth-child(3)
 {
-    transform: traslateY(-50%) scaleY(1);
+    transform: traslateY(-15px) scaleY(0);
 }
 
 .titulo_espacio 
@@ -70,14 +71,6 @@ h2:hover span:nth-child(3)
     border-color:rgb(70, 1, 1)
 }
 
-
-
 * {
     background-color: rgb(21, 68, 86);
-}
-
-
-.titulo_letra
-{
-    color: black;
 }

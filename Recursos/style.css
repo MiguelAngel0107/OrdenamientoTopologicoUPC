@@ -6,6 +6,7 @@ body
     background-color: #F9F5EB;
     background-color: #1c5179;
     margin:0; 
+
 }
 
 .title
@@ -95,7 +96,7 @@ h2:hover span:nth-child(3)
 {
     position: relative;
     width: 100%;
-    height: 800px;
+    height: 1200px;
     top: 90px;
     background: #e8e0cb;
 }
@@ -104,7 +105,7 @@ h2:hover span:nth-child(3)
 {
     position: absolute;
     width: 50%;
-    height: 120px;
+    height: 80px;
     top: 10%;
     left: 3%;
     border-radius: 25px;
@@ -112,42 +113,40 @@ h2:hover span:nth-child(3)
 
     background: #F9F5EB;
 }
-.recuadro_input
-{
-    position: absolute;
-    top: 10%;
-    left: 58%;
-}
-.input
-{
-    height: 100px;
-    width: 200px;
-}
 
 .espacio_bloques
 {
     position: absolute;
-
+    width: 92%;
+    height: 800px;
+    top: 24%;
+    left:4%;
+    border-radius: 25px;
     background: #F9F5EB;
+    border-style: solid;
+    border-color: #F9F5EB;
+    border-width:5px;
+    box-shadow: -17px 16px rgb(214, 202, 179);
 }
 
-.text
+.text1
 {
     position: absolute;
-    left: 16.5%;
-    top: 16%;
-    right: 16.5%;
-    bottom: 5%;
-    font-weight:bold;
-    font-style:normal;
-    font-size:x-large;
+    left: 15%;
+    top: 5%;
+    right: 15%;
+    bottom: 20%;
+    font-family: Verdana;
+    font-family: 'PT Sans';
+    font-size: 25px;
+    font-style:oblique;
 }
 
 footer
 {
-    background-color:#1c5179;
+    background-color:#1c9cff;
     position: relative;
-    bottom: 0;
+    top:2000px;
     width: 100%;
     height: 200px;
     color: white;
@@ -163,3 +162,66 @@ footer p br
 {
     display: block;
 }
+
+.form{
+    width: 100%;
+    height: 50px;
+    max-width: 400px;
+    position: relative;
+    overflow: hidden;
+    left :55%;
+    top : 120px;
+}
+.form input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: rgb(0, 0, 0);
+    padding-top: 10px;
+    border: none;
+    outline: 0px;
+}
+.form .lbl-nombre{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid #c7c7c7;
+}
+.form .lbl-nombre:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #1c5179;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+.text-nomb{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: rgb(214, 202, 179);
+}
+.form input:focus + .lbl-nombre .text-nomb,.form input:valid + .lbl-nombre .text-nomb{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #1c5179;
+}
+.form input:focus + .lbl-nombre:after, .form input:valid + .lbl-nombre:after{
+    transform: translateX(0%);
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+ .form{
+    width:85%;
+}
+}
+
+
+
+

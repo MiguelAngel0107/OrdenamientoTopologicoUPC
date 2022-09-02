@@ -96,7 +96,7 @@ h2:hover span:nth-child(3)
 {
     position: relative;
     width: 100%;
-    height: 1200px;
+    height: 650px;
     top: 90px;
     background: #e8e0cb;
 }
@@ -119,7 +119,7 @@ h2:hover span:nth-child(3)
     position: absolute;
     width: 92%;
     height: 300px;
-    top: 24%;
+    top: 38%;
     left:4%;
     border-radius: 25px;
     background: #F9F5EB;
@@ -170,7 +170,7 @@ footer p br
     position: relative;
     overflow: hidden;
     left :55%;
-    top : 120px;
+    top : 80px;
 }
 .form input{
     width: 100%;

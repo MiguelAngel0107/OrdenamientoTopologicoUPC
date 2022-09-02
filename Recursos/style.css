@@ -104,22 +104,24 @@ h2:hover span:nth-child(3)
 {
     position: absolute;
     width: 50%;
-    height: 260px;
+    height: 120px;
     top: 10%;
     left: 3%;
     border-radius: 25px;
+    box-shadow: -17px 16px rgb(214, 202, 179);
 
     background: #F9F5EB;
 }
 .recuadro_input
 {
     position: absolute;
-    top: 30%;
-    left: 65%;
+    top: 10%;
+    left: 58%;
 }
 .input
 {
-    width: 40%;
+    height: 100px;
+    width: 200px;
 }
 
 .espacio_bloques
@@ -133,7 +135,9 @@ h2:hover span:nth-child(3)
 {
     position: absolute;
     left: 16.5%;
-    top: 30%;
+    top: 16%;
+    right: 16.5%;
+    bottom: 5%;
     font-weight:bold;
     font-style:normal;
     font-size:x-large;

@@ -1,10 +1,79 @@
 
-#b1
+#b1, #b2, #b3, #b4, #b5, #b6
 {
     position: absolute;
-    top: 30%;
-    width: 100%;
+    top: 6%;
+    left: 2%;
+    width: 14%;
     height: 100px;
-    border: aqua;
-    border-width: 4px;
+    background: #e8a0cb;
+    border-radius: 30px;
+    box-shadow: -8px 10px #bd79a2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    font-size: 24px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+#b2
+{
+    left: 18.5%;
+}
+#b3
+{
+    left: 35%;
+}
+#b4
+{
+    left: 51.5%;
+}
+#b5
+{
+    left: 68%;
+}
+#b6 
+{
+    left: 84.5%;
+}
+
+
+#b7, #b8, #b9, #b10, #b11, #b12
+{
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    width: 14%;
+    height: 100px;
+    background: #e8a0cb;
+    border-radius: 30px;
+    box-shadow: -8px 10px #bd79a2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    font-size: 24px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+#b8
+{
+    left: 18.5%;
+}
+#b9
+{
+    left: 35%;
+}
+#b10
+{
+    left: 51.5%;
+}
+#b11
+{
+    left: 68%;
+}
+#b12
+{
+    left: 84.5%;
 }

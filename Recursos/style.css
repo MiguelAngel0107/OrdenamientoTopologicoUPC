@@ -91,4 +91,47 @@ h2:hover span:nth-child(3)
     top: 31%;
 }
 
+.fase_1
+{
+    position: relative;
+    width: 100%;
+    height: 800px;
+    top: 90px;
+    background: #e8e0cb;
+}
+
+.recuadro_para_texto
+{
+    position: absolute;
+    width: 50%;
+    height: 260px;
+    top: 10%;
+    left: 3%;
+    border-radius: 25px;
+
+    background: #F9F5EB;
+}
+.recuadro_input
+{
+    position: absolute;
+    top: 30%;
+    left: 65%;
+}
+
+.espacio_bloques
+{
+    position: absolute;
+
+    background: #F9F5EB;
+}
+
+.text
+{
+    position: absolute;
+    left: 16.5%;
+    top: 30%;
+    font-weight:bold;
+    font-style:normal;
+    font-size:x-large;
+}
 

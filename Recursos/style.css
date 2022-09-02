@@ -1,23 +1,24 @@
-
-* {
-    background-color: #354f52;
+body
+{
+    background-color: #1C3879; 
+    background-color: #607EAA; 
+    background-color: #EAE3D2; 
+    background-color: #F9F5EB;
+    background-color: #1c5179;
+    margin:0; 
 }
 
-
-.titulo_espacio 
-{   
-    transform: translateY(125px);
-    height:112px;
+.title
+{
     width: 100%;
-    background-color: #354f52;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+    height: 300px;
+    background: #e8e0cb;
+    position: relative;
 }
 
 h2 
 {
-    background-color: #354f52;
+    background-color: #F9F5EB;
     position: absolute;
     top : 50%;
     left : 50%;
@@ -32,11 +33,11 @@ h2
 }
 h2 span:nth-child(1) 
 {
-    background-color: #354f52;
+    background-color: #F9F5EB;
     position: absolute;
     top: 0;
     left:0;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     transition: 0.5s;
     clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
     overflow: hidden;
@@ -46,11 +47,11 @@ h2:hover span:nth-child(1)
     transform: translateY(-18px);
 }
 h2 span:nth-child(2){
-    background-color: #354f52;
+    background-color: #F9F5EB;
     position: absolute;
     top:0;
     left: 0;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     transition: 0.5s;
     clip-path:polygon(0 50%,100% 50%, 100% 100%, 0 100%);
     overflow: hidden;
@@ -63,10 +64,10 @@ h2 span:nth-child(3){
     position: absolute;
     top:50%;
     left: 0;
-    transform: translateY(-15px) scaleY(0);
-    width: 98%;
+    transform: translateY(-50%) scaleY(0);
+    width: 96%;
     color: #000;
-    background: #cad2c5;
+    background: #EAE3D2;
     font-size: 0.25em;
     letter-spacing: 0.7em;
     text-align: center;
@@ -78,38 +79,16 @@ h2 span:nth-child(3){
 
 h2:hover span:nth-child(3)
 {
-    transform: translateY(-15px) scaleY(1);
+    transform: translateY(-50%) scaleY(1);
 }
 
-.fase_1
+.rectanguloRelleno
 {
-    
-    position:fixed;
-    display:inline-block;
-    text-decoration:none;
-    width:100%;
-    height: 500px;
-    top:300px;
-	left:00px;
-    padding:10px;
-    background-color:#52796f;
-    color:#ffffff;
-    
-    
-}
-.recuadro_para_texto
-{
-    position:fixed;
-    display:inline-block;
-    text-decoration:none;
-    width: 40%;
-    height: 200px;
-    top:300px;
-	left:00px;
-    padding:10px;
-    background-color:#84a98c;
-    border-color: 50px #52796f;
-    color:#ffffff;
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    background-color: #F9F5EB;
+    top: 31%;
 }
 
 

@@ -1,9 +1,6 @@
 body
 {
-    background-color: #1C3879; 
-    background-color: #607EAA; 
-    background-color: #EAE3D2; 
-    background-color: #F9F5EB;
+
     background-color: #1c5179;
     margin:0; 
 
@@ -62,7 +59,7 @@ h2:hover span:nth-child(2)
     transform: translateY(18px);
 }
 h2 span:nth-child(3){
-    position: absolute;
+    position: absolute; 
     top:50%;
     left: 0;
     transform: translateY(-50%) scaleY(0);

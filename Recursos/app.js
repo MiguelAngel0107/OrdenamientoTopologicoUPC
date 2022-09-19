@@ -30,17 +30,17 @@ const Grafico = document.querySelector("#Grafico");
 
 const matriz = 
 [
-    [0,0,0,0,0,0,0,0,0,0,0,0],//0
-    [0,0,0,0,0,0,0,0,0,0,0,0],//1
+    [0,1,1,0,0,0,0,0,0,0,0,0],//0
+    [0,0,0,1,1,0,0,0,0,0,0,0],//1
     [0,0,0,0,0,0,0,0,0,0,0,0],//2
-    [0,0,0,0,0,0,0,0,0,0,0,0],//3
-    [0,0,0,0,0,0,0,0,0,0,0,0],//4
-    [0,0,0,0,0,0,0,0,0,0,0,0],//5
+    [0,0,0,0,0,1,0,0,0,0,0,0],//3
+    [0,0,0,0,0,1,1,0,0,0,0,0],//4
+    [0,0,0,0,0,0,0,1,1,0,0,0],//5
     [0,0,0,0,0,0,0,0,0,0,0,0],//6
-    [0,0,0,0,0,0,0,0,0,0,0,0],//7
+    [0,0,0,0,0,0,0,0,0,1,0,0],//7
     [0,0,0,0,0,0,0,0,0,0,0,0],//8
-    [0,0,0,0,0,0,0,0,0,0,0,0],//9
-    [0,0,0,0,0,0,0,0,0,0,0,0],//10
+    [0,0,0,0,0,0,0,0,0,0,1,0],//9
+    [0,0,0,0,0,0,0,0,0,0,0,1],//10
     [0,0,0,0,0,0,0,0,0,0,0,0],//11
 ];
 
@@ -60,29 +60,28 @@ function gradoInterno(x)
 }
 
 // Buscar el nodo con grado interno de Cero
-function nodoCero(x)
+function nodoCero(y)
 {
-    for (let i=0; i<x;i++)
+    for (let i=0; i<y;i++)
     {
         if(gradoInterno(i)===0)
         {
             console.log(i+" Estos nodo tienen 0");
             
-
             switch(i)
             {
-                case 0: Grafico.append(caja1); break;
-                case 1: Grafico.append(caja2); break;
-                case 2: Grafico.append(caja3); break;
-                case 3: Grafico.append(caja4); break;
-                case 4: Grafico.append(caja5); break;
-                case 5: Grafico.append(caja6); break;
-                case 6: Grafico.append(caja7); break;
-                case 7: Grafico.append(caja8); break;
-                case 8: Grafico.append(caja9); break;
-                case 9: Grafico.append(caja10); break;
-                case 10: Grafico.append(caja11); break;
-                case 11: Grafico.append(caja12); break;
+                case 0: Grafico.append(caja1); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1; break;
+                case 1: Grafico.append(caja2); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1; break;
+                case 2: Grafico.append(caja3); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1; break;
+                case 3: Grafico.append(caja4); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1;break;
+                case 4: Grafico.append(caja5); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1;break;
+                case 5: Grafico.append(caja6); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1;break;
+                case 6: Grafico.append(caja7); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1;break;
+                case 7: Grafico.append(caja8); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1;break;
+                case 8: Grafico.append(caja9); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1;break;
+                case 9: Grafico.append(caja10); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1;break;
+                case 10: Grafico.append(caja11); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1;break;
+                case 11: Grafico.append(caja12); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1;break;
             }
         }
     }
@@ -100,7 +99,7 @@ const value = insertar();
 
 procesar.addEventListener('click', ()=>{
 
-    console.log(value);
-      
+    nodoCero(insertar());
 
+    console.log(matriz[0][2]);
 });

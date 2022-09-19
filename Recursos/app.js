@@ -1,7 +1,5 @@
 const procesar = document.querySelector("#btnP");
 
-const entrada =  document.getElementsByClassName('entrada').value;
-
 const Box1 = document.querySelector("#b1");
 const Box2 = document.querySelector("#b2");
 const Box3 = document.querySelector("#b3");
@@ -62,9 +60,9 @@ function gradoInterno(x)
 }
 
 // Buscar el nodo con grado interno de Cero
-function nodoCero()
+function nodoCero(x)
 {
-    for (let i=0; i<12;i++)
+    for (let i=0; i<x;i++)
     {
         if(gradoInterno(i)===0)
         {
@@ -90,12 +88,19 @@ function nodoCero()
     }
 }
 
-console.log(entrada);
+
+//Espacio para entrada de valor
+const insertar = () => {
+    resultado = document.getElementById("empezar").value;
+    
+    return resultado;
+}
+
+const value = insertar();
 
 procesar.addEventListener('click', ()=>{
 
-    //console.log(entrada);
-
-    nodoCero();
+    console.log(value);
+      
 
 });

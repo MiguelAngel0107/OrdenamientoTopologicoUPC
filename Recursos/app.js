@@ -1,4 +1,6 @@
 const procesar = document.querySelector("#btnP");
+//Mostrar por intervalo de tiempo
+setInterval(()=>{},2000)
 
 const Box1 = document.querySelector("#b1");
 const Box2 = document.querySelector("#b2");
@@ -25,6 +27,18 @@ const caja9 = Box9.cloneNode(true);
 const caja10 = Box10.cloneNode(true);
 const caja11 = Box11.cloneNode(true);
 const caja12 = Box12.cloneNode(true);
+
+//Dandole Nuevo Estilo a las Cajas Procesadas
+const Style1=()=>{
+    caja1.style.backgroundColor = "#1c5179";
+    caja1.style.height="80px";
+    caja1.style.width="8%";
+    caja1.style.color="white";
+    caja1.style.boxShadow="-8px 10px #216ba3";
+    caja1.style.fontSize="12px";
+    caja1.style.top="36%";
+    caja1.style.left="1%";
+};
 
 const Grafico = document.querySelector("#Grafico");
 
@@ -70,7 +84,7 @@ function nodoCero(y)
             
             switch(i)
             {
-                case 0: Grafico.append(caja1); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1; break;
+                case 0: Grafico.append(caja1);Style1(); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1; break;
                 case 1: Grafico.append(caja2); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1; break;
                 case 2: Grafico.append(caja3); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1; break;
                 case 3: Grafico.append(caja4); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1;break;

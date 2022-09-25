@@ -1,6 +1,6 @@
 const procesar = document.querySelector("#btnP");
 //Mostrar por intervalo de tiempo
-setInterval(()=>{},2000)
+
 
 //Asignar Vlaores con el DOM
 const Box=[];
@@ -105,23 +105,32 @@ function nodoCero(y)
     {
         if(gradoInterno(i)===0)
         {
-            console.log(i+" Estos nodo tienen 0");
+            setTimeout(()=>{
+                Grafico.append(caja[i+1]);
+                Style(i+1); 
+                for(let j=0;j<y;j++)
+                { matriz[i][j] = 0;}
+                ; matriz[0][0] = -1; 
+                console.log("Soy nodo numero "+i)
+            },500); 
+
+            /*console.log("El nodo "+i+"; Tiene valor 0");
+                switch(i)
+                {
+                    case 0: setInterval(()=>{Grafico.append(caja[1]);Style(1); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1;},2000); break;
+                    case 1: setInterval(()=>{Grafico.append(caja[2]);Style(2); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1;},2000); break;
+                    case 2: setInterval(()=>{Grafico.append(caja[3]);Style(3); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1;},2000); break;
+                    case 3: setInterval(()=>{Grafico.append(caja[4]);Style(4); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1;},2000); break;
+                    case 4: setInterval(()=>{Grafico.append(caja[5]);Style(5); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1;},2000);break;
+                    case 5: setInterval(()=>{Grafico.append(caja[6]);Style(6); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1;},2000);break;
+                    case 6: setInterval(()=>{Grafico.append(caja[7]);Style(7); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1;},2000);break;
+                    case 7: setInterval(()=>{Grafico.append(caja[8]);Style(8); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1;},2000); break;
+                    case 8: setInterval(()=>{Grafico.append(caja[9]);Style(9); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1;},2000); break;
+                    case 9: setInterval(()=>{Grafico.append(caja[10]);Style(10); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1;},2000); break;
+                    case 10: setInterval(()=>{Grafico.append(caja[11]);Style(11); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1;},2000); break;
+                    case 11: setInterval(()=>{Grafico.append(caja[12]);Style(12); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1;},2000); break;
+                }*/
             
-            switch(i)
-            {
-                case 0: Grafico.append(caja[1]);Style(1); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1; break;
-                case 1: Grafico.append(caja[2]);Style(2); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1; break;
-                case 2: Grafico.append(caja[3]);Style(3); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1; break;
-                case 3: Grafico.append(caja[4]);Style(4); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1;break;
-                case 4: Grafico.append(caja[5]);Style(5); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1;break;
-                case 5: Grafico.append(caja[6]);Style(6); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1;break;
-                case 6: Grafico.append(caja[7]);Style(7); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1;break;
-                case 7: Grafico.append(caja[8]);Style(8); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1;break;
-                case 8: Grafico.append(caja[9]);Style(9); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1;break;
-                case 9: Grafico.append(caja[10]);Style(10); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1;break;
-                case 10: Grafico.append(caja[11]);Style(11); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1;break;
-                case 11: Grafico.append(caja[12]);Style(12); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1;break;
-            }
         }
     }
 }
@@ -136,8 +145,5 @@ const insertar = () => {
 
 
 procesar.addEventListener('click', ()=>{
-
     nodoCero(insertar());
-
-    console.log(matriz[0][2]);
 });

@@ -112,28 +112,10 @@ function nodoCero(y)
                 { matriz[i][j] = 0;}
                 ; matriz[0][0] = -1; 
                 console.log("Soy nodo numero "+i)
-            },500); 
-
-            /*console.log("El nodo "+i+"; Tiene valor 0");
-                switch(i)
-                {
-                    case 0: setInterval(()=>{Grafico.append(caja[1]);Style(1); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1;},2000); break;
-                    case 1: setInterval(()=>{Grafico.append(caja[2]);Style(2); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1;},2000); break;
-                    case 2: setInterval(()=>{Grafico.append(caja[3]);Style(3); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1;},2000); break;
-                    case 3: setInterval(()=>{Grafico.append(caja[4]);Style(4); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1;},2000); break;
-                    case 4: setInterval(()=>{Grafico.append(caja[5]);Style(5); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1;},2000);break;
-                    case 5: setInterval(()=>{Grafico.append(caja[6]);Style(6); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1;},2000);break;
-                    case 6: setInterval(()=>{Grafico.append(caja[7]);Style(7); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1;},2000);break;
-                    case 7: setInterval(()=>{Grafico.append(caja[8]);Style(8); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1;},2000); break;
-                    case 8: setInterval(()=>{Grafico.append(caja[9]);Style(9); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1;},2000); break;
-                    case 9: setInterval(()=>{Grafico.append(caja[10]);Style(10); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1;},2000); break;
-                    case 10: setInterval(()=>{Grafico.append(caja[11]);Style(11); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1;},2000); break;
-                    case 11: setInterval(()=>{Grafico.append(caja[12]);Style(12); for(let j=0;j<y;j++){ matriz[i][j] = 0;}; matriz[0][0] = -1;},2000); break;
-                }*/
-            
+            },500);             
         }
     }
-}
+};
 
 
 //Espacio para entrada de valor

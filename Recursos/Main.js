@@ -15,7 +15,6 @@ for(let i=1; i<=12; i++)
 };
 
 const Grafico = document.querySelector("#Grafico");
-
 //Dandole Nuevo Estilo a las Cajas Procesadas
 const Style=(x)=>{
     caja[x].style.backgroundColor = "#1c5179";
@@ -64,8 +63,6 @@ const Style=(x)=>{
             caja[x].style.left="86%"; break;
     };
 };
-
-
 
 const matriz = 
 [
